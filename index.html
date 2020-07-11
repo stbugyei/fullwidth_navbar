@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fullpage | Navbar</title>
+</head>
+
+<body>
+    <div class="head">
+
+        <div class="nav-wrapper">
+
+            <div class="search_wrapper">
+                <div class='search__container'>
+                    <form method="GET">
+                        <input class="input-field" type="search" name="keyword" placeholder="Enter keywords here"
+                            autocomplete="off">
+                        <button class="btn-search" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <nav>
+
+                <div class="logo">Stbugyei<span class="smile">&#9787;</span>
+                </div>
+
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <div class="checkbtn"><i class="fas fa-bars"></i></div>
+                </label>
+
+                <input type="checkbox" id="signIn">
+                <label for="signIn">
+                    <div class="sign-in"><i class="far fa-user"></i></div>
+                </label>
+
+                <input type="checkbox" id="toggle">
+
+                <input type="checkbox" id="form">
+
+                <!-- <label for="form">
+                    <div class="sign-in__form">
+
+                        <form class="form-wrapper__signin">
+
+                            <label for="signIn">
+                                <div class="navigation"><i class="far fa-times-circle"></i></div>
+                            </label>
+
+                            <div class="form-title">
+                                <p>SIGN IN TO YOUR ACCOUNT</p>
+                            </div>
+
+                            <div class="input-container">
+
+                                <div class="input-container__content">
+                                    <label for="name"></label>
+                                    <span class="user-icon"><i class="far fa-user"></i></span>
+                                    <input class="form-field" id="name" type="text" placeholder="Type your name"
+                                        autocomplete="off">
+                                </div>
+
+                            </div>
+
+                            <div class="input-container">
+                                <div class="input-container__content">
+                                    <label for="email"></label>
+                                    <span class="user-icon"><i class="fas fa-envelope"></i></span>
+                                    <input class="form-field" id="email" type="text" placeholder="Email"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <div class="input-container__content">
+                                    <label for="password"></label>
+                                    <span class="user-icon"><i
+                                        class="fas fa-unlock-alt"></i></span>
+                                    <input class="form-field" id="password" type="text" placeholder="Enter password"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="forgot-password">
+                                <span> <input type="checkbox" id="remember-me"> Remember me</span> <span>
+                                    <a href="#" class="links">
+                                        <p>Forgot password?</p>
+                                    </a>
+                                </span>
+                            </div>
+
+                            <div class="signin-login"><button class="btn-login">LOGIN</button></div>
+
+                            <P class="signup-text" > Sign Up with </P>
+
+                            <div class="social-media__content">
+
+                                <span> <a class="facebook" href="https://www.facebook.com/"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                </span>
+                                <span> <a class="twitter" href='#'>
+                                        <i class="fab fa-twitter"></i>
+                                    </a></span>
+                                <span> <a class="instagram" href='#'>
+                                        <i class="fab fa-instagram"></i>
+                                    </a></span>
+                            </div>
+
+                            <label for="toggle">
+                                <div class="create1">
+                                    <p>Don't have account? Register!</p>
+                                </div>
+                            </label>
+
+                        </form>
+
+                        <form class="form-wrapper__signup">
+
+                            <label for="signIn">
+                                <div class="navigation"><i class="far fa-times-circle"></i></div>
+                            </label>
+
+                            <div class="form-title">
+                                <p>CREATE YOUR ACCOUNT</p>
+                            </div>
+                            
+                            <div class="input-container">
+                                <div class="input-container__content">
+                                    <label for="info"></label>
+                                    <span class="user-icon"><i
+                                        class="fas fa-info"></i></span>
+                                    <input class="form-field" id="info" type="text" placeholder="Display name"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <div class="input-container__content">
+                                    <label for="user"></label>
+                                    <span class="user-icon"><i
+                                        class="far fa-user"></i></span>
+                                    <input class="form-field" id="user" type="text" placeholder="Username"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <div class="input-container__content">
+                                    <label for="email"></label>
+                                    <span class="user-icon"><i
+                                        class="fas fa-envelope"></i></span>
+                                    <input class="form-field" id="email" type="text" placeholder="Email"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <div class="input-container__content">
+                                    <label for="password"></label>
+                                    <span class="user-icon"><i
+                                        class="fas fa-lock"></i></span>
+                                    <input class="form-field" id="password" type="text" placeholder="Password"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="input-container">
+                                <div class="input-container__content">
+                                    <label for="password"></label>
+                                    <span class="user-icon"><i
+                                        class="fas fa-lock"></i></span>
+                                    <input class="form-field" id="password" type="text" placeholder="Confirm password"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="login"><button class="btn-login">REGISTER</button></div>
+
+                            <label for="toggle">
+                                <div class="create">
+                                    <p>Sign in!</p>
+                                </div>
+                            </label>
+                        </form> 
+                    </div>
+                </label> -->
+
+
+                <ul>
+                    <li> <label for="check-10" class="mobile-view">Home</label>
+                        <a href="#">Home</i></a>
+                        <input type="checkbox" id="check-10">
+                    </li>
+
+                    <li>
+                        <label for="check-9" class="mobile-view">Movies <i class="fas fa-caret-down"></i></label>
+                        <a href="#">Movies <i class="fas fa-caret-down"></i></a>
+                        <input type="checkbox" id="check-9">
+
+                        <ul class="submenu-list">
+
+                            <li class="submenu-heading">
+                                <a href="">
+                                    <h1>Movies Overview <i class="fas fa-film"></i></h1>
+                                </a>
+
+                                <button class="btn-exit">EXIT</button>
+                            </li>
+
+                            <li class="submenu-block">
+                                <ul class="submenu-block__content">
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-8">
+                                        <label for="check-8" class="mobile-view"><span
+                                                style="margin-left: -10px;">Gener</span>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </label>
+                                        <a href="#">Gener</a>
+                                        
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Action</a> </li>
+                                            <li> <a href="#">Adventure</a> </li>
+                                            <li> <a href="#">Animation</a> </li>
+                                            <li> <a href="#">Comedy</a> </li>
+                                            <li> <a href="#">Crime</a> </li>
+                                            <li> <a href="#">Family</a> </li>
+                                            <li> <a href="#">Fantasy</a> </li>
+                                            <li> <a href="#">Mystery</a> </li>
+                                            <li> <a href="#">Sci-Fi</a> </li>
+                                            <li> <a href="#">Thriller</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-7">
+                                        <label for="check-7" class="mobile-view"><span
+                                                style="margin-left: -10px;">Countries</span> <i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Countries</a>
+                                        
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">United States</a> </li>
+                                            <li> <a href="#">Ghana</a> </li>
+                                            <li> <a href="#">United Kingdom</a> </li>
+                                            <li> <a href="#">Canada</a> </li>
+                                            <li> <a href="#">France</a> </li>
+                                            <li> <a href="#">Japan</a> </li>
+                                            <li> <a href="#">Australia</a> </li>
+                                            <li> <a href="#">Spain</a> </li>
+                                            <li> <a href="#">China</a> </li>
+                                            <li> <a href="#">Denmark</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-6">
+                                        <label for="check-6" class="mobile-view"><span style="margin-left: -10px;">Year
+                                                Released</span><i class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Year Released</a>
+                                        
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">2020</a> </li>
+                                            <li> <a href="#">2019</a> </li>
+                                            <li> <a href="#">2018</a> </li>
+                                            <li> <a href="#">2017</a> </li>
+                                            <li> <a href="#">2016</a> </li>
+                                            <li> <a href="#">2015</a> </li>
+                                            <li> <a href="#">2014</a> </li>
+                                            <li> <a href="#">2013</a> </li>
+                                            <li> <a href="#">2012</a> </li>
+                                            <li> <a href="#">2011</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-5">
+                                        <label for="check-5" class="mobile-view"><span
+                                                style="margin-left: -10px;">Actors | Actress</span><i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Actors | Actress</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#"> Samuel L. Jackson </a> </li>
+                                            <li> <a href="#"> Liam Neeson</a> </li>
+                                            <li> <a href="#"> Denzel Washington</a> </li>
+                                            <li> <a href="#"> Brad Pitt</a> </li>
+                                            <li> <a href="#"> Tom Cruise</a> </li>
+                                            <li> <a href="#"> Jennifer Lawrence </a> </li>
+                                            <li> <a href="#"> Rosie Perez</a> </li>
+                                            <li> <a href="#"> Daniel Bernhardt</a> </li>
+                                            <li> <a href="#"> Margot Robbie</a> </li>
+                                            <li> <a href="#"> Mary Elizabeth Winstead</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="submenu-movies">
+                                <div class="trailler ">
+                                    <div class="triller-item"> <img class="trailler-image"
+                                            src="/black-and-white-production-scene-take-tool-918281.jpg" alt="">
+                                        <p class="trailler-span"> TRAILLERS <i class="fas fa-play"></i></p>
+                                    </div>
+                                    <div class="triller-item">
+                                        <iframe width="310" height="240" src="https://www.youtube.com/embed/xjDjIWPwcPU"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <p>Title: Black Panther</p>
+                                        <p>Running time: 2:26</p>
+                                    </div>
+
+                                    <div class="triller-item">
+                                        <iframe width=100% height="240" src="https://www.youtube.com/embed/DCAixCfVtfE"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <p>Title: The Blackout</p>
+                                        <p>Running time: 2:10</p>
+                                    </div>
+
+                                    <div class="triller-item">
+                                        <iframe width=100% height="240" src="https://www.youtube.com/embed/szby7ZHLnkA"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <p>Title: Sonic Hedgehog</p>
+                                        <p>Running time: 2:50</p>
+                                    </div>
+
+                                    <div class="triller-item">
+                                        <iframe width=100% height="240" src="https://www.youtube.com/embed/TYvVJRtN0vg"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                        <p>Title: The Recruit</p>
+                                        <p>Running time: 2:50</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <label for="check-4" class="mobile-view">Cars <i class="fas fa-caret-down"></i></label>
+                        <a href="#">Cars <i class="fas fa-caret-down"></i></a>
+                        <input type="checkbox" id="check-4">
+
+                        <ul class="submenu-list">
+
+                            <li class="submenu-heading">
+                                <a href="">
+                                    <h1>Cars Overview <i class="fas fa-car"></i></h1>
+                                </a>
+
+                                <button class="btn-exit">EXIT</button>
+                            </li>
+
+                            <li class="submenu-block">
+                                <ul class="submenu-block__content">
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-3">
+                                        <label for="check-3" class="mobile-view">Brands<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Brands</a>
+                                        
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Alfa Romeo</a> </li>
+                                            <li> <a href="#">Aston Martin</a> </li>
+                                            <li> <a href="#">Audi</a> </li>
+                                            <li> <a href="#">Bently</a> </li>
+                                            <li> <a href="#">BMW</a> </li>
+                                            <li> <a href="#">Buik</a> </li>
+                                            <li> <a href="#">Cardilac</a> </li>
+                                            <li> <a href="#">Chevrolet</a> </li>
+                                            <li> <a href="#">Chrysler</a> </li>
+                                            <li> <a href="#">Ferrari</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-2">
+                                        <label for="check-2" class="mobile-view">Types<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Types</a>
+                                        
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#"> SUVs</a> </li>
+                                            <li> <a href="#"> Trucks</a> </li>
+                                            <li> <a href="#"> Crossovers</a> </li>
+                                            <li> <a href="#"> Sedans</a> </li>
+                                            <li> <a href="#"> Coupes</a> </li>
+                                            <li> <a href="#"> Convertibles</a> </li>
+                                            <li> <a href="#"> Luxury </a> </li>
+                                            <li> <a href="#"> Sports Cars</a> </li>
+                                            <li> <a href="#"> Electric Vehicles </a> </li>
+                                            <li> <a href="#"> Wagons </a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-1">
+                                        <label for="check-1" class="mobile-view">Countries <i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Countries</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Belgium</a> </li>
+                                            <li> <a href="#">United States</a> </li>
+                                            <li> <a href="#">United Kingdom</a> </li>
+                                            <li> <a href="#">Canada</a> </li>
+                                            <li> <a href="#">France</a> </li>
+                                            <li> <a href="#">Japan</a> </li>
+                                            <li> <a href="#">Italy</a> </li>
+                                            <li> <a href="#">Spain</a> </li>
+                                            <li> <a href="#">China</a> </li>
+                                            <li> <a href="#">Denmark</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-0">
+                                        <label for="check-0" class="mobile-view">Released Year Model<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Released Year Model</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">2020</a> </li>
+                                            <li> <a href="#">2019</a> </li>
+                                            <li> <a href="#">2018</a> </li>
+                                            <li> <a href="#">2017</a> </li>
+                                            <li> <a href="#">2016</a> </li>
+                                            <li> <a href="#">2015</a> </li>
+                                            <li> <a href="#">2014</a> </li>
+                                            <li> <a href="#">2013</a> </li>
+                                            <li> <a href="#">2012</a> </li>
+                                            <li> <a href="#">2011</a> </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <li class="submenu-trending">
+                                <div class="trending">
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/red-ferrari-337909.jpg" alt="">
+                                        <p class="trending-span"> FERRARI</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="car-vehicle-automobile-range-rover-116675.jpg" alt="">
+                                        <p class="trending-span"> RANGE ROVER</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image" src="/lamborghini.jpg"
+                                            alt="">
+                                        <p class="trending-span"> LAMBORGHINI</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/black-dodge-challenger-coupe-3311574.jpg" alt="">
+                                        <p class="trending-span"> DODGE-cHALLENGER-COUPE</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <label for="check-11" class="mobile-view">Fitness and Training <i
+                                class="fas fa-caret-down"></i></label>
+                        <a href="#">Fitness and Training <i class="fas fa-caret-down"></i></a>
+                        <input type="checkbox" id="check-11">
+
+                        <ul class="submenu-list">
+
+                            <li class="submenu-heading">
+                                <a href="">
+                                    <h1>Fitness and Training Overview <i class="fas fa-skiing-nordic"></i></h1>
+                                </a>
+
+                                <button class="btn-exit">EXIT</button>
+                            </li>
+
+                            <li class="submenu-block">
+                                <ul class="submenu-block__content">
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-12">
+                                        <label for="check-12" class="mobile-view">Fitness equipment<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Fitness equipment</a>
+                                        
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Gym balls</a> </li>
+                                            <li> <a href="#">Gym mats</a> </li>
+                                            <li> <a href="#">Resistance banbds</a> </li>
+                                            <li> <a href="#">Treadmill</a> </li>
+                                            <li> <a href="#">Weight Benches</a> </li>
+                                            <li> <a href="#">Weights and dummbbells</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-13">
+                                        <label for="check-13" class="mobile-view">Gym accessories<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Gym accessories</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#"> Fitness watches</a> </li>
+                                            <li> <a href="#"> Fitness pendometers</a> </li>
+                                            <li> <a href="#"> Joint supports </a> </li>
+                                            <li> <a href="#"> Gym bags</a> </li>
+                                            <li> <a href="#"> Gym gloves</a> </li>
+                                            <li> <a href="#"> Sweatband and towels</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-14">
+                                        <label for="check-14" class="mobile-view">Sports Nutrition <i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Sports Nutrition</a>
+                                        
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Protein</a> </li>
+                                            <li> <a href="#">Balance diet</a> </li>
+                                            <li> <a href="#">Energy and pre-workout</a> </li>
+                                            <li> <a href="#">Fitness and welbeing</a> </li>
+                                            <li> <a href="#">Size and strenght</a> </li>
+                                            <li> <a href="#">Shaker bottles</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-15">
+                                        <label for="check-15" class="mobile-view">Gym clothing<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Gym clothing</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Base layers</a> </li>
+                                            <li> <a href="#">leggins and pants</a> </li>
+                                            <li> <a href="#">Hoodies</a> </li>
+                                            <li> <a href="#">Tractsuits</a> </li>
+                                            <li> <a href="#">Sports bras</a> </li>
+                                            <li> <a href="#">Gym</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="submenu-trending">
+                                <div class="trending">
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="main-qimg-863b015496f0b66f6105ad9ffe4dc33b.webp" alt="">
+                                        <p class="trending-span"> WEIGHTS</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="Sports-Equipment-and-Accessories.jpg" alt="">
+                                        <p class="trending-span"> SPORT ACCESSORIES</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/SportsNutritionPage-1024x683.jpg" alt="">
+                                        <p class="trending-span"> NUTRITION</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/Nike-BeTrue-2019-Collection_native_1600.jpg" alt="">
+                                        <p class="trending-span"> SPORT CLOTHING</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <label for="check-16" class="mobile-view">Leisure <i class="fas fa-caret-down"></i></label>
+                        <a href="#">Leisure <i class="fas fa-caret-down"></i></a>
+                        <input type="checkbox" id="check-16">
+
+                        <ul class="submenu-list">
+
+                            <li class="submenu-heading">
+                                <a href="">
+                                    <h1>Leisure Overview <i class="fas fa-walking"></i></h1>
+                                </a>
+
+                                <button class="btn-exit">EXIT</button>
+                            </li>
+
+                            <li class="submenu-block">
+                                <ul class="submenu-block__content">
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-17">
+                                        <label for="check-17" class="mobile-view">Fishing<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Fishing</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Fishing accessories</a> </li>
+                                            <li> <a href="#">Fishing hooks</a> </li>
+                                            <li> <a href="#">Fishing lures</a> </li>
+                                            <li> <a href="#">Landing nets</a> </li>
+                                            <li> <a href="#">Fishing rod</a> </li>
+                                            <li> <a href="#">Fishing float</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-18">
+                                        <label for="check-18" class="mobile-view">Leisure clothing<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Leisure clothing</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#"> Gloves</a> </li>
+                                            <li> <a href="#"> Jackets </a> </li>
+                                            <li> <a href="#"> Rainwear</a> </li>
+                                            <li> <a href="#"> Sweaters</a> </li>
+                                            <li> <a href="#"> Socks</a> </li>
+                                            <li> <a href="#"> Underwear</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-19">
+                                        <label for="check-19" class="mobile-view">Gardening <i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Gardening</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Artificial grass</a> </li>
+                                            <li> <a href="#">Bird food</a> </li>
+                                            <li> <a href="#">Garden pumps</a> </li>
+                                            <li> <a href="#">Garden furniture</a> </li>
+                                            <li> <a href="#">Gardening tools</a> </li>
+                                            <li> <a href="#">Grills</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-20">
+                                        <label for="check-20" class="mobile-view">Travel<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Travel</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Backpacks</a> </li>
+                                            <li> <a href="#">Sports bags</a> </li>
+                                            <li> <a href="#">Suitcases</a> </li>
+                                            <li> <a href="#">Travel accessories</a> </li>
+                                            <li> <a href="#">Neck rests</a> </li>
+                                            <li> <a href="#">Straps and tags</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="submenu-trending">
+                                <div class="trending">
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="selective-focus-of-brown-fishing-reel-1687242.jpg" alt="">
+                                        <p class="trending-span"> FISHING REEL</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/green-leaved-plants-2987081.jpg" alt="">
+                                        <p class="trending-span"> GREEN LEAVE PLANT</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/asda-luggage-hero-image__square.jpg" alt="">
+                                        <p class="trending-span"> TRAVELLING CHECK LIST</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/forest-bike-bulls-100582.jpg" alt="">
+                                        <p class="trending-span"> FOREST BIKES</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <label for="check-21" class="mobile-view">Construction <i class="fas fa-caret-down"></i></label>
+                        <a href="#">Construction <i class="fas fa-caret-down"></i></a>
+                        <input type="checkbox" id="check-21">
+
+                        <ul class="submenu-list">
+
+                            <li class="submenu-heading">
+                                <a href="">
+                                    <h1>Construction Overview <i class="fas fa-tools"></i></h1>
+                                </a>
+
+                                <button class="btn-exit">EXIT</button>
+                            </li>
+
+                            <li class="submenu-block">
+                                <ul class="submenu-block__content">
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-22">
+                                        <label for="check-22" class="mobile-view">Bricklaying<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Bricklaying</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Bricklaying accessories</a> </li>
+                                            <li> <a href="#">Bricklaying buckets</a> </li>
+                                            <li> <a href="#">Bricklaying tools</a> </li>
+                                            <li> <a href="#">Cement mixer</a> </li>
+                                            <li> <a href="#">Concrete</a> </li>
+                                            <li> <a href="#">Reinforcement</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-23">
+                                        <label for="check-23" class="mobile-view">Protective equipment<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Protective equipment</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#"> Bumper caps</a> </li>
+                                            <li> <a href="#"> Hearing protection </a> </li>
+                                            <li> <a href="#"> Protective eyewear</a> </li>
+                                            <li> <a href="#"> Protective mask</a> </li>
+                                            <li> <a href="#"> Safety helmets</a> </li>
+                                            <li> <a href="#"> Satety shoes</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-24">
+                                        <label for="check-24" class="mobile-view">Electrical Installations <i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">Electrical Installations</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Cable conduits</a> </li>
+                                            <li> <a href="#">Dimmers</a> </li>
+                                            <li> <a href="#">Fuses</a> </li>
+                                            <li> <a href="#">Installation cable</a> </li>
+                                            <li> <a href="#">Installation piping</a> </li>
+                                            <li> <a href="#">Switches</a> </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="submenu-list__item">
+                                        <input type="checkbox" id="check-25">
+                                        <label for="check-25" class="mobile-view">HVAC<i
+                                                class="fas fa-chevron-right"></i></label>
+                                        <a href="#">HVAC</a>
+
+                                        <ul class="submenu-list__drop">
+                                            <li> <a href="#">Chemicals</a> </li>
+                                            <li> <a href="#">Drainage</a> </li>
+                                            <li> <a href="#">Floor drains</a> </li>
+                                            <li> <a href="#">Frost guards</a> </li>
+                                            <li> <a href="#">Piping Installations</a> </li>
+                                            <li> <a href="#">Valves</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="submenu-trending">
+                                <div class="trending">
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/close-up-of-telephone-booth-257736.jpg" alt="">
+                                        <p class="trending-span"> Electricals</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image" src="/bgposthf1.jpg" alt="">
+                                        <p class="trending-span"> HARDWARE FIXTURES</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/yellow-utility-knives-1409215.jpg" alt="">
+                                        <p class="trending-span"> UTILITY KNIVES</p>
+                                    </div>
+
+                                    <div class="trending-item"> <img class="trending-image"
+                                            src="/8-Bits-of-Kit-That-Tradies-Need-to-Stay-Safe-at-Work.jpg" alt="">
+                                        <p class="trending-span"> PPE EQUIPMENT</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- <div class="cover__page"></div> -->
+        </div>
+</body>
+
+</html>
