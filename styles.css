@@ -100,7 +100,7 @@ nav ul li a{
     padding: 10px 35px;
     overflow: hidden;
     cursor: pointer;
-    transition: .2s ease-in-out;
+    transition: .1s;
 }
 
 @keyframes fade {
@@ -116,7 +116,7 @@ nav ul li a{
 
 nav ul li a:hover {
     background: #fff;
-    padding: 18px 35px;
+    padding: 15px 35px;
     box-shadow:0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
     color:#152a57;
 }
@@ -128,13 +128,10 @@ nav ul li a:hover > .fa-caret-down{
 }
 
 
-nav ul li:hover > ul{
-   /* top: 50px; */
+nav ul li:hover > .submenu-list{
   opacity: 1;
   visibility: visible;
-  /* transform: rotateY(0); */
-
-
+  animation: fade 1s;
 }
 
 
@@ -185,7 +182,6 @@ nav ul li:hover > ul{
 
 .submenu-list{
   position: absolute;
-  /* top: 100px; */
   left: 0;
   right: 0;
   opacity: 0;
@@ -196,7 +192,7 @@ nav ul li:hover > ul{
   list-style: none;
   justify-content: space-between;
   box-shadow:0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
-  transition: all 0.2s;
+  /* transition: all 0.2s ease-in-out; */
 }
 
 
@@ -212,7 +208,7 @@ nav ul li:hover > ul{
   border-right: 1px solid #dddddd;
   /* display: flex;
   flex-direction: column;  */
-  /*transition: 0.3s ease-in;*/
+  transition: 0.3s ease-in;
 }
 
 .submenu-list__drop > li{
@@ -231,13 +227,13 @@ color: #000;
 .submenu-list__drop > li > a:hover{
   color: #004d7a;
   text-decoration: underline;
-  box-shadow: initial;
+  box-shadow: initial !important;
 }
 
 .submenu-list__item > a:hover{
-  background: initial;
-  box-shadow: initial;
-  color: initial;
+  background: initial !important;
+  box-shadow: initial !important;
+  color: initial !important;
 }
 
 .submenu-list__item > a{
@@ -246,7 +242,6 @@ color: #000;
   text-transform: uppercase;
   font-weight: 600;
 }
-
 
 
 .submenu-movies,
@@ -258,7 +253,6 @@ color: #000;
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  /* background: linear-gradient(-60.76deg, #90CAF9 0%, #F2F2F2 57.96%, #DBDBDB 100%); */
   background: linear-gradient(-60.76deg, #F2F2F2 57.96%, #DBDBDB 100%, #90CAF9 0%)
 }
 
@@ -409,7 +403,7 @@ color: #000;
   box-shadow:0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
   opacity: 1;
   color: #fff;
-  transition: 2s;
+  transition: .5s;
   outline: none;
 }
 
@@ -457,7 +451,6 @@ color: #000;
   visibility: visible;
   opacity: 1;
 }
-
 
 
 .navigation{
@@ -808,11 +801,9 @@ nav ul{
 }
 
 .submenu-list{
-  box-shadow: initial;
-  position: initial;
+  box-shadow: initial !important;
+  position: initial !important;
   margin: 0;
-  animation: fade 1s;
-  transition: 0.2s ease-in;
 }
 
 
@@ -827,8 +818,8 @@ nav ul{
   line-height: 3rem;
   cursor: pointer;
   border-top: 1px solid #ddd;
-  animation: fade 1s;
   transition: 0.2s ease-in;
+  animation: fade 1s;
 }
 
 .mobile-view:hover,
@@ -843,7 +834,7 @@ nav ul{
   opacity: 0;
   /* -webkit-transition: opacity 600ms, visibility 600ms;
   transition: opacity 600ms, visibility 600ms; */
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in-out;
 }
 
 .fa-caret-down{
@@ -862,13 +853,11 @@ nav ul{
   transition: .5s;
 }
 
-
 .submenu-list__item {
   width: 100%;
   margin: 0;
   padding: 0 10px 10px 10px;
 }
-
 
 .submenu-list__drop {
   border-top: none;
@@ -883,11 +872,11 @@ nav ul{
 }
 
 nav ul li a{
-  padding:14px 0px 14px 10px;
+  padding:14px 0px 14px 10px !important;
 }
 
 nav ul li a:hover{
-  background: initial;
+  background: initial !important;
 }
 
 /* nav ul li a:hover {
