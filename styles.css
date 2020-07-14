@@ -15,7 +15,7 @@
   .cover__page{
     width: 100%;
     height: 100vh;
-    background-image: url(./black.jpg);
+    background-image: url(./clean-clear-cold-drink-416528.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -54,15 +54,15 @@ nav:after, .nav:before {
   display: table;
 }
 
-nav .logo{
-    float: left;
-    color: #fff;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 46px;
-    padding: 0 50px;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+.logo{ 
+  color: #ddd;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0 10px; 
+  margin: 10px ;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+  
 }
 
 .smile{
@@ -131,7 +131,7 @@ nav ul li a:hover > .fa-caret-down{
 nav ul li:hover > .submenu-list{
   opacity: 1;
   visibility: visible;
-  animation: fade 1s;
+  animation: fade .8s;
 }
 
 
@@ -191,7 +191,8 @@ nav ul li:hover > .submenu-list{
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
-  box-shadow:0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+  background: #ffff;
+  box-shadow:0 3px 6px #051937, 0 1px 2px #051937;
   /* transition: all 0.2s ease-in-out; */
 }
 
@@ -225,7 +226,7 @@ color: #000;
 }
 
 .submenu-list__drop > li > a:hover{
-  color: #004d7a;
+  color: #283593;
   text-decoration: underline;
   box-shadow: initial !important;
 }
@@ -745,6 +746,8 @@ background-image: linear-gradient(to right top, #5c6bc0, #4f5db5, #4350aa, #3642
 
   }
 
+  
+
   .signup-text{
     text-align: center;
     margin: 15px 0px 5px 0px;
@@ -778,21 +781,33 @@ background-image: linear-gradient(to right top, #5c6bc0, #4f5db5, #4350aa, #3642
   }
 
 
-nav .logo{
+/* nav .logo{
  text-align: center;
   width: 100%;
-}
+} */
+
+.logo{
+  position: absolute;
+  left: 50px;
+  margin: 10px 0px;
+  bottom: 38px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23); 
+} 
 
 
 /*sign-in properties*/
 
- nav .sign-in {
-  right: 25px;
-  top: -37px;
+nav .sign-in {
+  right: 15px;
+  top: 15px;
 } 
 
+nav .sign-in i{
+  font-size: 1.2rem;
+} 
 
 nav ul{
+  background: #ffffff;
   top: 100px;
   width: 100%;
   /* margin-right: 0px;
@@ -857,6 +872,7 @@ nav ul{
   width: 100%;
   margin: 0;
   padding: 0 10px 10px 10px;
+  color: slateblue;
 }
 
 .submenu-list__drop {
@@ -868,8 +884,9 @@ nav ul{
 
 .submenu-list__drop > li {
  height: 50px;
- background: #ddd;
+ background: linear-gradient(-60.76deg, #F2F2F2 57.96%, #DBDBDB 100%, #90CAF9 0%) 
 }
+
 
 nav ul li a{
   padding:14px 0px 14px 10px !important;
@@ -911,7 +928,6 @@ nav ul ul ul li{
 }
 
 
-
 /*Displaying the ul when humberger button is clicked*/
  [id^=check]:checked  ~ ul {
   visibility: visible;
@@ -950,8 +966,6 @@ nav ul ul ul li{
 .btn-search{
  height: 40px;
 } 
-
-
 
 
 nav ul li, nav ul ul li{
