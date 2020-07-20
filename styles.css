@@ -42,7 +42,6 @@ nav{
    flex-direction: column;  */
    background-image: linear-gradient(to right top, #051937, #152a57, #293c78, #414f9b, #5d61be);
     text-transform: capitalize;
-    transition: .3s ease;
 }
 
 
@@ -192,7 +191,7 @@ nav ul li:hover > .submenu-list{
   right: 0;
   opacity: 0;
   visibility: hidden; 
-  margin: 0 15px;
+  margin: 0 50px;
    /* display: flex; */
   flex-wrap: wrap;
   list-style: none;
@@ -470,7 +469,7 @@ display: none;
 }
 
 .input-container{
-  margin: 10px;
+  margin: 15px;
   border-radius: 1px;
   /* background: #f6f6f6;   */
 }
@@ -522,12 +521,20 @@ display: none;
   transition: .3s bottom ease;
 }
 
+.form-field:focus{
+  background: #fff;
+}
+
+
+
 .form-field:focus + .lable-format{
   bottom: 90%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 14px;
   opacity: 1;
-  background: #ffff;
+  background: #fff; 
+  outline: none;
+  padding: 0px 10px 0px 10px;
 }
 
 
@@ -670,17 +677,16 @@ border-radius: 3px;
 /*== search  properties==*/
 
 .search_wrapper{
+width: 100%;
+height: 80px;
 display: flex;
 justify-content: center;
 background-image: linear-gradient(to right top, #7ea5cc, #97b6d6, #b0c8e1, #c9daeb, #e2ecf6);
-/* background-image: linear-gradient(to right top, #5c6bc0, #4f5db5, #4350aa, #36429e, #283593); */
 }
 
 .search__container{
   position: relative;
-  /*float: right; */
-  /* right: 80px; */
-  width: 40%;
+  width: 20%;
   margin: 15px;
   border-radius: 3px;
 }
@@ -707,50 +713,53 @@ background-image: linear-gradient(to right top, #7ea5cc, #97b6d6, #b0c8e1, #c9da
   font-size: 0.8rem;
   line-height: 3rem;
   resize: vertical;
-  outline: none;
-  background-color: transparent; 
   border: none;
+  outline: none;
   border-bottom: 1px solid rgb(6, 4, 22);
-  transition: .4s ease-in-out;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #4350aa);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #4350aa);
+  background-position: -400px 0;
+  background-size: 400px 100%;
+  background-repeat: no-repeat;
+  color: rgb(6, 4, 22);
 }
 
-.search-label{
-  position: absolute;
-  opacity: 0; 
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-  transition: .3s bottom ease;
-}
 
-.input-field:focus + .search-label{
-  bottom: 70%;
-  font-size: 12px;
-  opacity: 1;
-  color: #fff;
-  background: transparent;
-}
+.input-field::-webkit-input-placeholder {
+  color: #000000;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+ }
 
-  /*Removing the placeholder on focus in the input-field*/
+  /*Toggling the placeholder on focus in the input-field*/
 
   .input-field:focus::-webkit-input-placeholder {
-    color:transparent; 
-    transition: .3s ease; 
+    color: #4350aa;
+    -webkit-transform: translateY(-18.5px);
+    transform: translateY(-18.5px);
+    visibility: visible !important;
   }
 
- .input-field:focus:-moz-placeholder {
-    color:transparent;
-    transition: .3s ease;
+
+  .input-field:focus:-moz-placeholder {
+   color: #4350aa;
+   -webkit-transform: translateY(-18.5px);
+   transform: translateY(-18.5px);
+   visibility: visible !important;
    } 
 
 
-.input-field:focus,
-select:focus{
-  border-bottom: 2px solid #e2ecf6;
-}
+  .input-field:focus, select:focus{
+   box-shadow: none;
+   outline: none;
+   background-position: 0 0;
+   border-bottom: 2px solid rgb(6, 4, 22);
+  }
+ 
 
-
-.btn-search{
+ .btn-search{
   position: absolute;
   top: 0;
   right: 0;
@@ -761,7 +770,7 @@ select:focus{
   color: #8e95a5;
   font-size: 1.2rem;
   cursor: pointer;
-}
+ }
 
 
 .btn-search i{
@@ -776,6 +785,7 @@ select:focus{
 */
  nav .user-btn {
     position: absolute;
+    display: block;
     float: right;
     right: 50px;
     top: 90px;
@@ -785,13 +795,20 @@ select:focus{
     text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
 }
 
+.user-btn:hover{
+  color: #1da1f2;
+}
+
+.user-btn i:hover{
+  color: #1da1f2;
+}
+
+
   .user-btn i{
   color: #f4f6fb;
   font-size: 20px;
   text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
-
   }
-
 
   .signup-text{
     text-align: center;
@@ -803,18 +820,11 @@ select:focus{
 === media querry ===
 */
 
-#nav-height{
-  display: block;
-}
-
-
 @media all and (max-width: 1037px){
 
   .nav{
-     /* max-height: 100px;   */
     background-image: linear-gradient(to right top, #051937, #152a57, #293c78, #414f9b, #5d61be);
-    text-transform: capitalize;
-    transition: .3s ease;  
+    text-transform: capitalize; 
   }
 
 
@@ -886,7 +896,7 @@ nav ul{
 
 .mobile-view:hover,
 .mobile-view:active {
- color: #66c;
+ color:  #1da1f2;;
 }
 
 
@@ -925,7 +935,6 @@ nav ul{
 .submenu-list__drop {
   border-top: none;
   border-right: none;
-  /* border-right-style: groove; */
   border-radius: 4px;
 }
 
@@ -976,6 +985,7 @@ nav ul li a:hover{
  #mobile-search:checked ~ .search_wrapper{
   animation: fade .7s;
   display: block;
+  height: 80px;
 }
 
 
@@ -1013,6 +1023,7 @@ font-size: 1.2rem;
   width: 98%;
   /* position: absolute; */
   background-image: initial !important;
+  height: initial !important;
   margin: 10px 0px 15px 0px;
 }
 
@@ -1033,27 +1044,26 @@ font-size: 1.2rem;
 }
 
 
-.input-field:focus + .search-label{
-  opacity: 0; 
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
+ .input-field::-webkit-input-placeholder {
+  color: #ddd;  
+ }
+
 
 .input-field:focus,
-select:focus{
+ select:focus{
   border-bottom: 2px solid #4350aa !important;
 }
 
+.input-field:focus::-webkit-input-placeholder {
+  -webkit-transform: initial !important;
+  transform: initial !important;
+}
 
 
-
-/* .input-field {
-  padding-left: 50px;
- line-height: 35px;
- border: 2px solid #4350aa;
- box-shadow: initial;
-} */
+.input-field:focus:-moz-placeholder {
+  -webkit-transform: initial !important;
+  transform: initial !important;
+ } 
 
 
 .btn-search{
@@ -1065,7 +1075,6 @@ select:focus{
 nav ul li, nav ul ul li{
   display: block;
   width: 100%;
-  /* padding-left: 40px; */
   background: rgba(0, 0, 0, 0.01);
 }
 
