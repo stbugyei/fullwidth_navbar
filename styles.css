@@ -15,7 +15,7 @@
   .cover__page{
     width: 100%;
     height: 100vh;
-    background-image: url(./clean-clear-cold-drink-416528.jpg);
+    background-image: url(./images/clean-clear-cold-drink-416528.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -822,7 +822,8 @@ background-image: linear-gradient(to right top, #7ea5cc, #97b6d6, #b0c8e1, #c9da
 
 @media all and (max-width: 1037px){
 
-  .nav{
+  nav{
+    height: 55px;
     background-image: linear-gradient(to right top, #051937, #152a57, #293c78, #414f9b, #5d61be);
     text-transform: capitalize; 
   }
@@ -846,7 +847,7 @@ background-image: linear-gradient(to right top, #7ea5cc, #97b6d6, #b0c8e1, #c9da
   display: none;
   visibility: visible;
   opacity: 1;
-  animation: fade 1s;
+  animation: fade .6s;
   }
 
 
@@ -884,14 +885,13 @@ nav ul{
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-weight: 600;
-  /* color: white; */
   font-size: 16px;
-  padding: 0 20px;
-  line-height: 3rem;
+  padding: 0px 0px 0px 20px;
+  line-height: 3.5rem;
   cursor: pointer;
   border-top: 1px solid #ddd;
   transition: 0.2s ease-in;
-  animation: fade 1s;
+  animation: fade .4s;
 }
 
 .mobile-view:hover,
@@ -909,19 +909,32 @@ nav ul{
   transition: 0.2s ease-in-out;
 }
 
-.fa-caret-down{
+
+.btn-caret{
   float: right;
-  margin-top: 17px;
-  padding-left: 15px;
+  text-align: center;
+  line-height: 3.5rem;
+  width: 60px;
+  border: none;
+  border-left: 2px solid #ddd;
+  background: none;
+  outline: none;
+}
+
+
+
+.fa-caret-down{
+  font-size: 20px;
+  padding: 10px;
+  margin: 0px;
   color: initial;
-  border-left: 1px solid #ddd;
 }
 
 
 .fa-chevron-right {
   float: right;
-  margin-top: 25px;
-  animation: fade 1s;
+  margin: 25px 15px 0px 0px;
+  animation: fade .3s;
   transition: .5s;
 }
 
@@ -992,7 +1005,7 @@ nav ul li a:hover{
 /*User-icon properties*/
 
 nav .user-btn {
-  /* right: 15px; */
+  right: 55px; 
   top: 10px;
   color: #7EA5CC;
 }
@@ -1032,6 +1045,7 @@ font-size: 1.2rem;
  margin:0px;
  right: -4px;
 }
+
 
 .input-field{
   padding-left: 50px;
@@ -1083,7 +1097,7 @@ nav ul li, nav ul ul li{
 @media (min-width: 320px) and (max-width: 480px) {
 
   .form-wrapper__content {
-    width: 310px;
+    width: 370px;
     padding: 0px;
     border: none;
     border-radius: initial;
