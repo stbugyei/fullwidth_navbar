@@ -136,9 +136,7 @@ nav ul li a:hover > .fa-caret-down{
 nav ul li:hover > .submenu-list{
   opacity: 1;
   height: 9999999px;
-  visibility: visible;
-  transform: scale(1);
-  animation: fade .7s;
+  visibility: visible; 
 }
 
 
