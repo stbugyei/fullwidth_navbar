@@ -84,7 +84,7 @@ nav:after, .nav:before {
  nav ul{
  /* position: relative;   */
  list-style: none;
- transition: .2s;
+ transition: all.3s;
   /* width: 100%; */
 
 }
@@ -137,6 +137,7 @@ nav ul li:hover > .submenu-list{
   opacity: 1;
   visibility: visible;
   transform: scale(1);
+  transition: all.3s;
   animation: fade .7s;
 }
 
@@ -193,7 +194,7 @@ nav ul li:hover > .submenu-list{
   opacity: 0;
   visibility: hidden;
   transform: scale(0);
-  transform-origin: top;
+  transform-origin: left;
   margin: 0 50px;
    /* display: flex; */
   flex-wrap: wrap;
