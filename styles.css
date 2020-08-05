@@ -15,7 +15,7 @@
   .cover__page{
     width: 100%;
     height: 100vh;
-    background-image: url(./images/clean-clear-cold-drink-416528.jpg);
+    background-image: url(./images/ice-bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -848,7 +848,7 @@ background-image: linear-gradient(to right top, #7ea5cc, #97b6d6, #b0c8e1, #c9da
   display: none;
   visibility: visible;
   opacity: 1;
-  animation: fade .6s;
+  animation: fade .5s;
   }
 
 
@@ -869,6 +869,7 @@ background-image: linear-gradient(to right top, #7ea5cc, #97b6d6, #b0c8e1, #c9da
 nav ul{
   background: #ffffff;
   width: 100%;
+  top: 55px;
   /* margin-right: 0px;
   left: -100%;*/
   transition: 0.3s ease-in;
@@ -890,7 +891,7 @@ nav ul{
   padding: 0px 0px 0px 20px;
   line-height: 3.5rem;
   cursor: pointer;
-  border-top: 1px solid #ddd;
+  border-top: 1px dotted #ddd;
   transition: 0.2s ease-in;
   animation: fade .4s;
 }
@@ -907,11 +908,10 @@ nav ul{
   opacity: 0;
   -webkit-transition: opacity 600ms, visibility 600ms;
   transition: opacity 600ms, visibility 600ms;
-  transition: 0.2s ease-in-out;
 }
 
 
-.btn-caret{
+/* .btn-caret{
   float: right;
   text-align: center;
   line-height: 3.5rem;
@@ -920,23 +920,38 @@ nav ul{
   border-left: 2px solid #ddd;
   background: none;
   outline: none;
-}
-
-
+  cursor: pointer;
+} */
 
 .fa-caret-down{
+  float: right;
+  text-align: center;
+  width: 60px;
+  height: 3.5rem;
   font-size: 20px;
-  padding: 10px;
+  padding: 15px;
   margin: 0px;
   color: initial;
+  border: none;
+  border-left: 1px dotted #ddd;
+  background: none;
+  outline: none;
+  cursor: pointer;
+ transition: .5s;
 }
+
+/*Toggling the fa-caret-down*/
+  [id^=check]:checked ~ label.mobile-view i.fas.fa-caret-down{
+   transform: rotate(270deg);
+   border-left: none;
+}  
 
 
 .fa-chevron-right {
   float: right;
   margin: 25px 15px 0px 0px;
   animation: fade .3s;
-  transition: .5s;
+  transition: .3s ease all;
 }
 
 .submenu-list__item {
@@ -982,18 +997,25 @@ nav ul li a:hover{
 
 
 /*Displaying the ul when humberger button is clicked*/
- [id^=check]:checked  ~ ul {
+ [id^=check]:checked  ~ ul{
   visibility: visible;
   display: block;
   opacity: 1;
 }
 
 
-/*Toggling the chevron up and down*/
-[id^=check]:checked ~ label i.fas.fa-chevron-right::before{
+/*Toggling the chevron up and down with ::before*/
+ /* [id^=check]:checked ~ label i.fas.fa-chevron-right::before{
     color: #66c;
     content: "\f078";
-}
+}  */
+
+
+/*Toggling the chevron up and down with transform*/
+[id^=check]:checked ~ label i.fas.fa-chevron-right{
+  color: #66c;
+ transform: rotate(90deg);
+} 
 
 /*Displaying the search wrapper when the search button is clicked*/
  #mobile-search:checked ~ .search_wrapper{
