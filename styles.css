@@ -871,7 +871,7 @@ nav ul{
   width: 100%;
   /* margin-right: 0px;
   left: -100%;*/
-  transition: 0.3s ease-in;
+  transition: 0.3s;
 }
 
 .submenu-list{
@@ -892,7 +892,7 @@ nav ul{
   cursor: pointer;
   border-top: 1px dotted #ddd;
   transition: 0.2s ease-in;
-  animation: fade .4s;
+  animation: fade .3s;
 }
 
 .mobile-view:hover,
@@ -936,7 +936,7 @@ nav ul{
   background: none;
   outline: none;
   cursor: pointer;
- transition: .5s;
+ transition: .3s;
 }
 
 /*Toggling the fa-caret-down*/
