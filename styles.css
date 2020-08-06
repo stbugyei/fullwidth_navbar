@@ -940,9 +940,8 @@ nav ul{
 }
 
 /*Toggling the fa-caret-down*/
-  [id^=check]:checked ~ label.mobile-view i.fas.fa-caret-down{
-   transform: rotate(270deg);
-   border-left: none;
+  [id^=check]:checked ~ label.mobile-view i.fas.fa-caret-down::before{
+  content: "\f0da";
 }  
 
 
